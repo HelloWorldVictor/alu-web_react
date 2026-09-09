@@ -13,3 +13,7 @@ Webpack/task_1/public/bundle.js
 Webpack/task_2/public/bundle.js
 Webpack/task_2/public/*.jpg
 Webpack/task_3/public/
+
+# React intro build output
+react_intro/*/dashboard/build/
+react_intro/task_5/dashboard/dist/bundle.js
