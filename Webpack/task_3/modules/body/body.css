@@ -1,0 +1,11 @@
+button {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#count {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}

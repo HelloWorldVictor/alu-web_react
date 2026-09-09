@@ -1,0 +1,6 @@
+footer,
+body > p:last-of-type {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555555;
+}

@@ -1,6 +1,15 @@
 node_modules/
-public/
-dist/
 package-lock.json
 .DS_Store
 *.log
+
+# TypeScript project build output
+TypeScript/*/public/
+TypeScript/*/dist/
+
+# Webpack project build output
+Webpack/task_0/dist/main.js
+Webpack/task_1/public/bundle.js
+Webpack/task_2/public/bundle.js
+Webpack/task_2/public/*.jpg
+Webpack/task_3/public/
