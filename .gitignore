@@ -17,3 +17,5 @@ Webpack/task_3/public/
 # React intro build output
 react_intro/*/dashboard/build/
 react_intro/task_5/dashboard/dist/bundle.js
+react_intro/task_5/dashboard/dist/*.jpg
+react_intro/task_5/dashboard/dist/*.png
