@@ -5,6 +5,14 @@
     "module": "es6",
     "target": "es5",
     "allowJs": true,
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "types": []
+  },
+  "include": [
+    "js/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
 }
