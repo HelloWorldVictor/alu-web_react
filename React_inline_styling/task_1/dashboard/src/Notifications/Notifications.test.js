@@ -32,7 +32,7 @@ describe('Notifications', () => {
     });
 
     it('displays the menu item', () => {
-      expect(wrapper.find('div.menuItem')).toHaveLength(1);
+      expect(wrapper.find('div').first().text()).toBe('Your notifications');
     });
 
     it('does not display the notifications panel', () => {
@@ -48,7 +48,7 @@ describe('Notifications', () => {
     });
 
     it('displays the menu item', () => {
-      expect(wrapper.find('div.menuItem')).toHaveLength(1);
+      expect(wrapper.find('div').first().text()).toBe('Your notifications');
     });
 
     it('displays the notifications panel', () => {
@@ -78,9 +78,10 @@ describe('Notifications', () => {
     });
 
     it('renders the right html for the first NotificationItem', () => {
-      expect(wrapper.find(NotificationItem).first().html()).toEqual(
-        '<li data-notification-type="default">New course available</li>'
-      );
+      const firstHtml = wrapper.find(NotificationItem).first().html();
+
+      expect(firstHtml).toContain('data-notification-type="default"');
+      expect(firstHtml).toContain('New course available');
     });
   });
 

@@ -19,9 +19,11 @@ describe('NotificationItem', () => {
 
   it('renders the correct html when passing type and value props', () => {
     const wrapper = shallow(<NotificationItem type="default" value="test" />);
-    expect(wrapper.html()).toEqual(
-      '<li data-notification-type="default">test</li>'
-    );
+    const li = wrapper.find('li');
+
+    expect(li).toHaveLength(1);
+    expect(li.prop('data-notification-type')).toBe('default');
+    expect(li.text()).toBe('test');
   });
 
   it('renders the correct html when passing an html prop', () => {

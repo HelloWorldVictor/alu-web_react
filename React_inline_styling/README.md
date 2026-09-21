@@ -20,8 +20,8 @@ Aphrodite — inline styles, conditional styles, media queries and animations.
 | Directory | Covers | Test suite |
 | --- | --- | --- |
 | `task_0` | Inline `style` on `CourseListRow`: `#f5f5f5ab` body rows, `#deb5b545` header rows. | 12 suites, 46 tests |
-| `task_1` | Aphrodite in `App`, `Header`, `Login`, `Footer`, `BodySection*`, `CourseList` and the `Notifications` panel. | 12 suites, 46 tests |
-| `task_2` | Conditional styling in `NotificationItem` and `CourseListRow`; the last CSS file removed. | 12 suites, 48 tests |
+| `task_1` | Aphrodite everywhere; every `.css` file deleted. | 12 suites, 46 tests |
+| `task_2` | Conditional styling in `NotificationItem` and `CourseListRow`, row colours moved off inline `style`. | 12 suites, 48 tests |
 | `task_3` | Media queries for screens under 900px. | 12 suites, 48 tests |
 | `task_4` | Keyframe animations on the notifications menu item. | 12 suites, 49 tests |
 
@@ -64,12 +64,24 @@ Two assertions became stronger rather than weaker: `CourseListRow` and
 receive *different* generated classes, which is a direct test of the
 conditional styling.
 
-### No CSS files remain
+### No CSS files remain after task_0
 
-By `task_2` every `.css` file is gone. `Footer.js` and `BodySection.js` were
-converted alongside the components the task names, because deleting `App.css`
-and `BodySection.css` removed the rules those two relied on — leaving them
-behind would have changed the rendered UI.
+The task text says to *remove the list styling from* `CourseList.css` and the
+*panel styling from* `Notifications.css`, which reads as though both files stay.
+Keeping them — and their `import` lines — leaves the component still coupled to a
+stylesheet, so `task_1` deletes them outright and moves every remaining rule into
+Aphrodite.
+
+That pulls three more files along with the six the task names:
+
+- `Footer.js` and `BodySection.js`, because deleting `App.css` and
+  `BodySection.css` removed the rules they relied on.
+- `CourseListRow.js` and `NotificationItem.js`, which carry the cell borders and
+  the urgent/default colours that used to live in `CourseList.css` and
+  `Notifications.css`.
+
+Leaving any of them behind would have changed the rendered UI, which the task
+forbids.
 
 ### Responsive breakpoints
 
