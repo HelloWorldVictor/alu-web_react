@@ -1,0 +1,6 @@
+#CourseList th,
+#CourseList td {
+  padding: 8px 12px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}

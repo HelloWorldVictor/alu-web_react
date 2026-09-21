@@ -29,3 +29,8 @@ react_props/*/dashboard/dist/*.png
 React_component/*/dashboard/dist/bundle.js
 React_component/*/dashboard/dist/*.jpg
 React_component/*/dashboard/dist/*.png
+
+# React inline styling build output
+React_inline_styling/*/dashboard/dist/bundle.js
+React_inline_styling/*/dashboard/dist/*.jpg
+React_inline_styling/*/dashboard/dist/*.png

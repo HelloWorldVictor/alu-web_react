@@ -1,0 +1,17 @@
+.menuItem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  background-color: #fff8f8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+li[data-notification-type='default'] {
+  color: blue;
+}
+
+li[data-notification-type='urgent'] {
+  color: red;
+}
