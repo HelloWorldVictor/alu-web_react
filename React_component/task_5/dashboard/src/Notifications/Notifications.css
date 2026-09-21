@@ -1,0 +1,32 @@
+.menuItem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 12px;
+  background-color: #fff8f8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Notifications {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  z-index: 10;
+  border: 3px dashed #e0354b;
+  padding: 12px 20px;
+  background-color: #ffffff;
+}
+
+.Notifications ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.Notifications li[data-notification-type='default'] {
+  color: blue;
+}
+
+.Notifications li[data-notification-type='urgent'] {
+  color: red;
+}

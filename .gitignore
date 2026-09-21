@@ -24,3 +24,8 @@ react_intro/task_5/dashboard/dist/*.png
 react_props/*/dashboard/dist/bundle.js
 react_props/*/dashboard/dist/*.jpg
 react_props/*/dashboard/dist/*.png
+
+# React component build output
+React_component/*/dashboard/dist/bundle.js
+React_component/*/dashboard/dist/*.jpg
+React_component/*/dashboard/dist/*.png
